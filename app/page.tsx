@@ -29,6 +29,7 @@ export default function Home() {
         toast.error(`🚫 Failed to send email: ${data.error}`);
       }
     } catch (error) {
+      console.error("Error sending email:", error);
       toast.error("🚫 An error occurred while sending the email");
     }
   };
